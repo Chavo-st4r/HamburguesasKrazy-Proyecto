@@ -1,0 +1,16 @@
+@use 'variables' as *;
+
+body {
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+h1, h2 {
+  color: $text-color;
+
+  &.important {
+    color: $text-color !important;
+  }
+}

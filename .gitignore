@@ -1,0 +1,16 @@
+# Carpetas que no se suben
+node_modules/
+dist/
+.sass-cache/
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos temporales
+*.log
+*.tmp
+
+# Configs locales
+.env
+.vscode/

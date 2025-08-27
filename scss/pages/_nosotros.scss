@@ -1,0 +1,17 @@
+@use '../base/variables' as *;
+
+.texto-uniforme {
+  font-family: $font-main;
+  font-size: 1.1rem;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.titulo-seccion {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #dc3545;
+  text-align: left;
+  margin-bottom: 1rem;
+}

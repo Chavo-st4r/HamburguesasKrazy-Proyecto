@@ -11,126 +11,44 @@
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      line-height: 1.6;
-      color: #212529;
-    }
-
-    .texto-uniforme {
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 1.1rem;
-      font-weight: 400;
-      text-align: left;
-      margin-bottom: 1.5rem;
-    }
-
-    .titulo-seccion {
-      font-size: 2rem;
-      font-weight: bold;
-      color: #dc3545;
-      text-align: left;
-      margin-bottom: 1rem;
-    }
-
-    .navbar-brand img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-
-    .nav-link {
-      color: white !important;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-
-    .nav-link:hover {
-      color: yellow !important;
-    }
-
-    .account-icon {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-    }
-
-    .footer {
-      background-color: #111;
-      color: white;
-      padding: 20px 0;
-    }
-
-    .footer a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-      color: yellow;
-    }
-
-    .social-icons img {
-      width: 20px;
-      margin-right: 10px;
-      transition: transform 0.3s ease;
-    }
-
-    .social-icons img:hover {
-      transform: scale(1.2);
-    }
-
-    .offcanvas-body .nav-link {
-      color: black !important;
-      transition: color 0.3s ease;
-    }
-
-    .offcanvas-body .nav-link:hover {
-      color: yellow !important;
-    }
-
-    .offcanvas-title {
-      color: black;
-    }
-  </style>
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: red;">
+  <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container">
       <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
-        <img src="../assets/img/images.png" alt="Logo">
+        <img src="../assets/img/images.png" alt="Logo circular de Hamburguesas Crazy con fondo rojo">
         <span class="ms-2">Hamburguesas Crazy</span>
       </a>
 
-      <!-- Menú principal visible en escritorio -->
+      <!-- Menú principal -->
       <div class="d-none d-lg-flex align-items-center ms-auto">
         <ul class="navbar-nav text-center">
           <li class="nav-item"><a class="nav-link fw-bold text-white" href="../index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link fw-bold text-white" href="menu.html">Menú</a></li>
           <li class="nav-item"><a class="nav-link fw-bold text-white" href="restaurantes.html">Restaurantes</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-white" href="Nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-white" href="nosotros.html">Nosotros</a></li>
         </ul>
       </div>
 
-      <!-- Ícono de cuenta siempre visible -->
+      <!-- Ícono de cuenta -->
       <div class="d-flex align-items-center ms-3">
         <a href="#">
-          <img src="../assets/img/account.jpg" alt="Cuenta" class="account-icon">
+          <img src="../assets/img/account.jpg" alt="Ícono de cuenta de usuario en formato circular" class="account-icon">
         </a>
       </div>
 
-      <!-- Botón hamburguesa visible en todas las resoluciones -->
+      <!-- Botón hamburguesa -->
       <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
         ☰
       </button>
     </div>
   </nav>
 
-  <!-- Offcanvas lateral -->
+  <!-- Offcanvas -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
@@ -141,12 +59,12 @@
         <li><a class="nav-link fw-bold" href="../index.html">Home</a></li>
         <li><a class="nav-link fw-bold" href="menu.html">Menú</a></li>
         <li><a class="nav-link fw-bold" href="restaurantes.html">Restaurantes</a></li>
-        <li><a class="nav-link fw-bold" href="Nosotros.html">Nosotros</a></li>
+        <li><a class="nav-link fw-bold" href="nosotros.html">Nosotros</a></li>
       </ul>
     </div>
   </div>
 
-  <!-- Contenido principal -->
+  <!-- Contenido -->
   <main class="container my-5">
     <h2 class="titulo-seccion">¿Quiénes Somos?</h2>
     <p class="texto-uniforme">Somos Hamburguesas Crazy, un rincón nacido en el corazón del Oeste donde combinamos sabor, estilo callejero y pasión por las hamburguesas. No seguimos modas: las creamos.</p>
@@ -159,36 +77,35 @@
 
     <div class="text-center mt-5">
       <video controls class="img-fluid" width="400">
-        <source src="../assets/videos/Wayback Burgers Ad.mp4" type="video/mp4">
+        <source src="../assets/videos/Wayback Burgers Ad.mp4" alt="Video Ilustrativo del restaurante haciendo hamburguesas" type="video/mp4">
         Tu navegador no soporta el video.
+         
       </video>
     </div>
   </main>
 
   <!-- Footer -->
   <footer class="footer mt-5">
-    <div class="container">
-      <div class="row text-center text-md-start">
-        <div class="col-md-3 mb-3">
-          <p><strong>Hamburguesas Crazy</strong></p>
-        </div>
-        <div class="col-md-3 mb-3">
-          <a href="../index.html">Home</a> |
-          <a href="menu.html">Menú</a> |
-          <a href="restaurantes.html">Restaurantes</a> |
-          <a href="Nosotros.html">Nosotros</a>
-        </div>
-        <div class="col-md-3 mb-3">
-          <p><strong>Contacto</strong><br>8989898989<br>mail@gmail.com</p>
-        </div>
-        <div class="col-md-3 mb-3">
-          <p><strong>Redes Sociales</strong></p>
-          <div class="social-icons">
-            <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png" alt="Instagram"></a>
-            <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="Facebook"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/youtube.png" alt="YouTube"></a>
-            <a href="https://www.linkedin.com/" target="_blank"><img src="../assets/img/linkedin.png" alt="LinkedIn"></a>
-          </div>
+    <div class="container d-flex justify-content-between flex-wrap">
+      <div class="footer-item">
+        <p><strong>Hamburguesas Crazy</strong></p>
+      </div>
+      <div class="footer-item">
+        <a href="../index.html">Home</a> | 
+        <a href="menu.html">Menú</a> | 
+        <a href="restaurantes.html">Restaurantes</a> | 
+        <a href="nosotros.html">Nosotros</a>
+      </div>
+      <div class="footer-item">
+        <p><strong>Contacto</strong><br>8989898989<br>mail@gmail.com</p>
+      </div>
+      <div class="footer-item redes">
+        <p><strong>Redes Sociales</strong></p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png" alt="Ícono de Instagram en color negro" width="20"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="Ícono de Facebook en color azul" width="20"></a>
+          <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/youtube.png" alt="Ícono de YouTube en rojo con símbolo de reproducción" width="20"></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img src="../assets/img/linkedin.png" alt="Ícono de LinkedIn en azul profesional" width="20"></a>
         </div>
       </div>
     </div>

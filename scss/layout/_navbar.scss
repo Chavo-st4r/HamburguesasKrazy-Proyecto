@@ -1,0 +1,25 @@
+@use '../base/variables' as *;
+
+.custom-navbar {
+  background-color: $primary-color;
+
+  .navbar-brand {
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    span {
+      color: $text-color !important;
+    }
+  }
+
+  .nav-link {
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $secondary-color !important;
+    }
+  }
+}

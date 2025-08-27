@@ -1,0 +1,20 @@
+@use '../base/variables' as *;
+
+.botones {
+  text-align: center;
+  margin: 30px 0;
+
+  a {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: $text-color;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+
+    &:hover {
+      background-color: darkred;
+    }
+  }
+}

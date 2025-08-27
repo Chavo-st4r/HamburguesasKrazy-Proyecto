@@ -1,0 +1,19 @@
+@use '../base/variables' as *;
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  .menu-item {
+    position: relative;
+
+    &::after {
+      content: "🍔";
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      font-size: 20px;
+    }
+  }
+}

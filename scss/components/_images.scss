@@ -1,0 +1,27 @@
+@use '../base/variables' as *;
+
+.hover-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: $shadow-light;
+  }
+}
+
+.img-hamburguesa {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.account-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}

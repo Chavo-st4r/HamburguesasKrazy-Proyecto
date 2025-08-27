@@ -11,89 +11,16 @@
   <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-    }
-
-    .navbar {
-      background-color: red;
-    }
-
-    .navbar-brand img {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-    }
-
-    .nav-link {
-      transition: color 0.3s ease;
-    }
-
-    .nav-link:hover {
-      color: yellow !important;
-    }
-
-    .account-icon {
-      width: 30px;
-      height: 30px;
-      border-radius: 50%;
-    }
-
-    .hover-img {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-radius: 10px;
-    }
-
-    .hover-img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
-    .img-hamburguesa {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-
-    .footer {
-      background-color: #111;
-      color: white;
-      padding: 20px 0;
-    }
-
-    .footer a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .footer a:hover {
-      text-decoration: underline;
-      color: yellow;
-    }
-
-    .offcanvas-body .nav-link {
-      color: black !important;
-      transition: color 0.3s ease;
-    }
-
-    .offcanvas-body .nav-link:hover {
-      color: yellow !important;
-    }
-
-    .offcanvas-title {
-      color: black;
-    }
-  </style>
+  <!-- Tu CSS personalizado -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg custom-navbar">
     <div class="container">
       <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
-        <img src="assets/img/images.png" alt="Logo">
+        <img src="assets/img/images.png" alt="Logo redondo de Hamburguesas Crazy con fondo rojo">
         <span class="ms-2">Hamburguesas Crazy</span>
       </a>
 
@@ -103,18 +30,18 @@
           <li class="nav-item"><a class="nav-link fw-bold text-white" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link fw-bold text-white" href="pages/menu.html">Menú</a></li>
           <li class="nav-item"><a class="nav-link fw-bold text-white" href="pages/restaurantes.html">Restaurantes</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-white" href="pages/Nosotros.html">Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-white" href="pages/nosotros.html">Nosotros</a></li>
         </ul>
       </div>
 
-      <!-- Ícono de cuenta siempre visible -->
+      <!-- Ícono de cuenta -->
       <div class="d-flex align-items-center ms-3">
         <a href="#">
-          <img src="assets/img/account.jpg" alt="Cuenta" class="account-icon">
+          <img src="assets/img/account.jpg" alt="Foto de perfil del usuario en formato circular" class="account-icon">
         </a>
       </div>
 
-      <!-- Botón hamburguesa visible en todas las resoluciones -->
+      <!-- Botón menú hamburguesa -->
       <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
         ☰
       </button>
@@ -132,7 +59,7 @@
         <li><a class="nav-link fw-bold" href="index.html">Home</a></li>
         <li><a class="nav-link fw-bold" href="pages/menu.html">Menú</a></li>
         <li><a class="nav-link fw-bold" href="pages/restaurantes.html">Restaurantes</a></li>
-        <li><a class="nav-link fw-bold" href="pages/Nosotros.html">Nosotros</a></li>
+        <li><a class="nav-link fw-bold" href="pages/nosotros.html">Nosotros</a></li>
       </ul>
     </div>
   </div>
@@ -140,47 +67,48 @@
   <!-- Contenido principal -->
   <div class="container my-5">
     <div class="text-center">
-      <img src="assets/img/pipol.jpg" alt="personas" class="img-fluid hover-img animate__animated animate__fadeIn">
+      <img src="assets/img/pipol.jpg" alt="Grupo de personas compartiendo hamburguesas y papas fritas en una mesa de madera" class="img-fluid hover-img animate__animated animate__fadeIn">
     </div>
 
-    <div class="row text-center mt-4">
-      <div class="col-md-4 mb-3">
-        <img src="assets/img/burguer1.jpeg" alt="Hamburguesa" class="img-fluid hover-img img-hamburguesa">
+    <!-- GRID propio -->
+    <div class="menu-grid mt-4">
+      <div class="menu-item">
+        <img src="assets/img/burguer1.jpeg" alt="Hamburguesa clásica con queso cheddar, lechuga y tomate en pan artesanal" class="img-fluid hover-img img-hamburguesa">
       </div>
-      <div class="col-md-4 mb-3">
-        <img src="assets/img/burguer 2.png" alt="Hamburguesa" class="img-fluid hover-img img-hamburguesa">
+      <div class="menu-item">
+        <img src="assets/img/burguer2.png" alt="Hamburguesa doble con panceta, queso fundido y salsa barbacoa" class="img-fluid hover-img img-hamburguesa">
       </div>
-      <div class="col-md-4 mb-3">
-        <img src="assets/img/burguer3.jpeg" alt="Hamburguesa" class="img-fluid hover-img img-hamburguesa">
+      <div class="menu-item">
+        <img src="assets/img/burguer3.jpeg" alt="Hamburguesa gourmet con vegetales grillados, queso azul y rúcula fresca" class="img-fluid hover-img img-hamburguesa">
       </div>
     </div>
   </div>
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="row text-center text-md-start">
-        <div class="col-md-3 mb-3">
-          <p><strong>Hamburguesas Crazy</strong></p>
-        </div>
-        <div class="col-md-3 mb-3">
-          <a href="index.html">Home</a> | 
-          <a href="pages/menu.html">Menú</a> | 
-          <a href="pages/restaurantes.html">Restaurantes</a> | 
-          <a href="pages/Nosotros.html">Nosotros</a>
-        </div>
-        <div class="col-md-3 mb-3">
-          <p><strong>Contacto</strong><br>8989898989<br>mail@gmail.com</p>
-        </div>
-        <div class="col-md-3 mb-3">
-          <p><strong>Redes Sociales</strong></p>
-          <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/instagram.png" width="20"></a>
-          <a href="https://www.facebook.com/" target="_blank"><img src="assets/img/facebook.png" width="20"></a>
-          <a href="https://www.youtube.com/" target="_blank"><img src="assets/img/youtube.png" width="20"></a>
-          <a href="https://www.linkedin.com/" target="_blank"><img src="assets/img/linkedin.png" width="20"></a>
-        </div>
+    <div class="container d-flex justify-content-between flex-wrap">
+      <div class="footer-item">
+        <p><strong>Hamburguesas Crazy</strong></p>
+      </div>
+      <div class="footer-item">
+        <a href="index.html">Home</a> | 
+        <a href="pages/menu.html">Menú</a> | 
+        <a href="pages/restaurantes.html">Restaurantes</a> | 
+        <a href="pages/nosotros.html">Nosotros</a>
+      </div>
+      <div class="footer-item">
+        <p><strong>Contacto</strong><br>8989898989<br>mail@gmail.com</p>
+      </div>
+      <div class="footer-item redes">
+        <p><strong>Redes Sociales</strong></p>
+        <a href="https://www.instagram.com/" target="_blank"><img src="assets/img/instagram.png" alt="Ícono de Instagram en color negro" width="20"></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="assets/img/facebook.png" alt="Ícono de Facebook en color azul" width="20"></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="assets/img/youtube.png" alt="Ícono de YouTube en rojo con símbolo de reproducción" width="20"></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="assets/img/linkedin.png" alt="Ícono de LinkedIn en azul profesional" width="20"></a>
       </div>
     </div>
+
+
   </footer>
 
   <!-- Bootstrap JS -->

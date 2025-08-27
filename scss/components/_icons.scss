@@ -1,0 +1,13 @@
+@use '../base/variables' as *;
+
+.social-icons {
+  img {
+    width: 20px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

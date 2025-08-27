@@ -1,0 +1,17 @@
+@use '../base/variables' as *;
+
+.card {
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.03);
+    z-index: 2;
+  }
+
+  .card-img-top {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+  }
+}

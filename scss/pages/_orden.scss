@@ -1,0 +1,47 @@
+@use '../base/variables' as *;
+
+.orden-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.productos img {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: $shadow-dark;
+}
+
+.resumen {
+  max-width: 400px;
+  background-color: $light-bg;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  
+  h2 {
+    margin-bottom: 20px;
+    color: $dark-text;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+}
+
+.total {
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 1.2em;
+}
