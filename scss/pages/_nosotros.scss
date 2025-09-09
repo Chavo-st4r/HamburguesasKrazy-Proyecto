@@ -1,4 +1,5 @@
 @use '../base/variables' as *;
+@use '../utils/mixins' as mix;
 
 .texto-uniforme {
   font-family: $font-main;
@@ -14,4 +15,5 @@
   color: #dc3545;
   text-align: left;
   margin-bottom: 1rem;
+  @include mix.animacion-aparecer;
 }

@@ -6,11 +6,18 @@ body {
   background-color: #ffffff;
 }
 
-h1, h2 {
+h1 {
   color: #ffffff;
 }
-h1.important, h2.important {
+h1.important {
   color: #ffffff !important;
+}
+
+h2 {
+  color: #111;
+}
+h2.important {
+  color: #111 !important;
 }
 
 body {
@@ -38,6 +45,26 @@ main {
 }
 .botones a:hover {
   background-color: darkred;
+}
+
+@keyframes rebote-suave {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  80% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.card {
+  animation: rebote-suave 0.8s ease-out;
 }
 
 .card {
@@ -104,8 +131,19 @@ main {
   font-size: 20px;
 }
 
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .custom-navbar {
   background-color: red;
+  background: linear-gradient(135deg, #ff4e50, #de6e18);
 }
 .custom-navbar .navbar-brand img {
   width: 50px;
@@ -172,6 +210,7 @@ main {
   color: #dc3545;
   text-align: left;
   margin-bottom: 1rem;
+  animation: aparecer 0.8s ease-out;
 }
 
 .orden-main {
@@ -215,6 +254,29 @@ main {
   margin-top: 20px;
   font-weight: bold;
   font-size: 1.2em;
+}
+
+.mapa-sucursal {
+  margin-top: 40px;
+  text-align: center;
+}
+.mapa-sucursal iframe {
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border: none;
+  display: block;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .mapa-sucursal iframe {
+    height: 250px;
+  }
+}
+@media (max-width: 576px) {
+  .mapa-sucursal iframe {
+    height: 200px;
+  }
 }
 
 @media (max-width: 768px) {

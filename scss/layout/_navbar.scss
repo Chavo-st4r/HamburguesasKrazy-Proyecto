@@ -1,7 +1,9 @@
 @use '../base/variables' as *;
+@use '../utils/mixins' as mix;
 
 .custom-navbar {
   background-color: $primary-color;
+  @include mix.fondo-gradiente(#ff4e50, #de6e18);
 
   .navbar-brand {
     img {
@@ -14,6 +16,7 @@
       color: $text-color !important;
     }
   }
+  
 
   .nav-link {
     transition: color 0.3s ease;

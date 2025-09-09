@@ -1,0 +1,25 @@
+.mapa-sucursal {
+  margin-top: 40px;
+  text-align: center;
+
+  iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    border: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    iframe {
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    iframe {
+      height: 200px;
+    }
+  }
+}

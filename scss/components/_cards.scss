@@ -1,7 +1,9 @@
 @use '../base/variables' as *;
+@use '../utils/placeholders' as place;
 
 .card {
   transition: transform 0.3s ease;
+@extend %animacion-rebote;
 
   &:hover {
     transform: scale(1.03);

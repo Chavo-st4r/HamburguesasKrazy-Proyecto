@@ -14,5 +14,9 @@
 
 @use 'pages/nosotros';
 @use 'pages/orden';
+@use 'pages/restaurantes';
 
 @use 'media';
+
+@use 'utils/mixins'as mix;
+@use 'utils/placeholders'as place;
