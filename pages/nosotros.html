@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Nosotros | Hamburguesas Crazy</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Conocé la historia, filosofía y valores de Hamburguesas Crazy. Desde 2019, creando burgers con pasión y estilo callejero.">
+  <meta name="keywords" content="nosotros, historia hamburguesas, filosofía Crazy, hamburguesas artesanales, comida urbana">
+  <meta name="author" content="Braian Ramírez">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <!-- Estilos personalizados -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<link rel="icon" href="../assets/img/favicon.png" type="image/png">
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+        <img src="../assets/img/images.png" alt="Logo circular de Hamburguesas Crazy con fondo rojo">
+        <span class="ms-2">Hamburguesas Crazy</span>
+      </a>
+
+      <!-- Menú principal -->
+      <div class="d-none d-lg-flex align-items-center ms-auto">
+        <ul class="navbar-nav text-center">
+          <li class="nav-item"><a class="nav-link fw-bold text-white" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-white" href="menu.html">Menú</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-white" href="restaurantes.html">Restaurantes</a></li>
+          <li class="nav-item"><a class="nav-link fw-bold text-white" href="nosotros.html">Nosotros</a></li>
+        </ul>
+      </div>
+
+      <!-- Ícono de cuenta -->
+      <div class="d-flex align-items-center ms-3">
+        <a href="#">
+          <img src="../assets/img/account.jpg" alt="Ícono de cuenta de usuario en formato circular" class="account-icon">
+        </a>
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+        ☰
+      </button>
+    </div>
+  </nav>
+
+  <!-- Offcanvas -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a class="nav-link fw-bold" href="../index.html">Home</a></li>
+        <li><a class="nav-link fw-bold" href="menu.html">Menú</a></li>
+        <li><a class="nav-link fw-bold" href="restaurantes.html">Restaurantes</a></li>
+        <li><a class="nav-link fw-bold" href="nosotros.html">Nosotros</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Contenido -->
+  <main class="container my-5">
+    <h2 class="titulo-seccion">¿Quiénes Somos?</h2>
+    <p class="texto-uniforme">Somos Hamburguesas Crazy, un rincón nacido en el corazón del Oeste donde combinamos sabor, estilo callejero y pasión por las hamburguesas. No seguimos modas: las creamos.</p>
+
+    <h2 class="titulo-seccion">Nuestra Historia</h2>
+    <p class="texto-uniforme">Todo comenzó en 2019, con una parrilla prestada, una receta secreta y muchas ganas de romperla. Desde entonces, crecimos sin perder lo más importante: la locura por el sabor.</p>
+
+    <h2 class="titulo-seccion">Nuestra Filosofía</h2>
+    <p class="texto-uniforme">Acá se come con las manos, se disfruta sin culpa y se vuelve porque el pan está más rico que el chisme del barrio. Creemos que una buena burger puede alegrarte el día.</p>
+
+    <div class="text-center mt-5">
+      <video controls class="img-fluid" width="400">
+        <source src="../assets/videos/Wayback Burgers Ad.mp4" alt="Video Ilustrativo del restaurante haciendo hamburguesas" type="video/mp4">
+        Tu navegador no soporta el video.
+         
+      </video>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer mt-5">
+    <div class="container d-flex justify-content-between flex-wrap">
+      <div class="footer-item">
+        <p><strong>Hamburguesas Crazy</strong></p>
+      </div>
+      <div class="footer-item">
+        <a href="../index.html">Home</a> | 
+        <a href="menu.html">Menú</a> | 
+        <a href="restaurantes.html">Restaurantes</a> | 
+        <a href="nosotros.html">Nosotros</a>
+      </div>
+      <div class="footer-item">
+        <p><strong>Contacto</strong><br>8989898989<br>mail@gmail.com</p>
+      </div>
+      <div class="footer-item redes">
+        <p><strong>Redes Sociales</strong></p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png" alt="Ícono de Instagram en color negro" width="20"></a>
+          <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="Ícono de Facebook en color azul" width="20"></a>
+          <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/youtube.png" alt="Ícono de YouTube en rojo con símbolo de reproducción" width="20"></a>
+          <a href="https://www.linkedin.com/" target="_blank"><img src="../assets/img/linkedin.png" alt="Ícono de LinkedIn en azul profesional" width="20"></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
