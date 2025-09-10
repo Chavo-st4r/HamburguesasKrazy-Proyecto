@@ -26,7 +26,7 @@ Sitio web responsive para una cadena de hamburgueserías ficticia. Incluye naveg
 
 ##  Demo
 
-👉 [Ver sitio en GitHub Pages](https://braianramirez.github.io/proyecto2)
+👉 [Ver sitio en GitHub Pages](https://chavo-st4r.github.io/HamburguesasKrazy-Proyecto/)
 
 ---
 
