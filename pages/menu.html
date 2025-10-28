@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Menú | Hamburguesas Crazy</title>
-
-  <!-- SEO -->
-  <meta name="description" content="Descubrí nuestros combos de hamburguesas artesanales con papas fritas y bebida. Elegí tu favorito y pedilo online.">
-  <meta name="keywords" content="menú hamburguesas, combos, comida rápida, hamburguesas Crazy, papas fritas, delivery">
-  <meta name="author" content="Braian Ramírez">
-
-  <!-- Bootstrap CSS -->
+   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Animate.css -->
@@ -19,43 +13,52 @@
   <!-- Estilos personalizados -->
   <link rel="stylesheet" href="../css/style.css">
 
+  <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
 </head>
-<link rel="icon" href="../assets/img/favicon.png" type="image/png">
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
-        <img src="../assets/img/images.png" alt="Logo">
-        <span class="ms-2">Hamburguesas Crazy</span>
-      </a>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+      <img src="../assets/img/images.png" alt="Logo circular de Hamburguesas Crazy con fondo rojo">
+      <span class="ms-2">Hamburguesas Crazy</span>
+    </a>
 
-      <!-- Menú principal visible en escritorio -->
-      <div class="d-none d-lg-flex align-items-center ms-auto">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item"><a class="nav-link fw-bold text-white" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-white" href="menu.html">Menú</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-white" href="restaurantes.html">Restaurantes</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-white" href="nosotros.html">Nosotros</a></li>
-        </ul>
-      </div>
-
-      <!-- Ícono de cuenta siempre visible -->
-      <div class="d-flex align-items-center ms-3">
-        <a href="#">
-          <img src="../assets/img/account.jpg" alt="Cuenta" class="account-icon">
-        </a>
-      </div>
-
-      <!-- Botón hamburguesa visible en todas las resoluciones -->
-      <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-        ☰
-      </button>
+    <!-- Menú principal visible en escritorio -->
+    <div class="d-none d-lg-flex align-items-center ms-auto">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="restaurantes.html">Restaurantes</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="nosotros.html">Nosotros</a></li>
+      </ul>
     </div>
-  </nav>
 
-  <!-- Offcanvas lateral -->
+    <!-- Ícono de cuenta -->
+    <div class="d-flex align-items-center ms-3">
+      <a href="#">
+        <img src="../assets/img/account.jpg" alt="Ícono de cuenta de usuario en formato circular" class="account-icon">
+      </a>
+    </div>
+
+    <!-- Ícono de carrito con contador -->
+    <div class="d-flex align-items-center ms-3">
+      <a class="nav-link position-relative" data-bs-toggle="offcanvas" data-bs-target="#carritoCanvas">
+        <img src="../assets/img/cart.png" alt="Carrito" width="30">
+        <span id="contador-carrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+      </a>
+    </div>
+
+    <!-- Botón hamburguesa visible en todas las resoluciones -->
+    <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+      ☰
+    </button>
+  </div>
+</nav>
+
+ <!-- Offcanvas lateral -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
@@ -66,101 +69,105 @@
         <li><a class="nav-link fw-bold" href="../index.html">Home</a></li>
         <li><a class="nav-link fw-bold" href="menu.html">Menú</a></li>
         <li><a class="nav-link fw-bold" href="restaurantes.html">Restaurantes</a></li>
-        <li><a class="nav-link fw-bold" href="Nosotros.html">Nosotros</a></li>
+        <li><a class="nav-link fw-bold" href="nosotros.html">Nosotros</a></li>
       </ul>
     </div>
   </div>
 
+
   <!-- Sección de combos -->
   <section class="container my-5">
-    <h2 class="text-center mb-4 animate__animated animate__fadeIn">Nuestros Combos</h2>
+    <h2 class="text-center mb-4">Nuestros Combos</h2>
     <div class="row g-4 justify-content-center">
       <!-- Combo 1 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 shadow-sm border-0">
-          <a href="orden.html">
-            <img src="../assets/img/Combo 1.jpg" class="card-img-top" alt="Combo 1: Hamburguesa doble con queso">
-          </a>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="../assets/img/Combo 1.jpg" class="card-img-top" alt="Combo 1" />
           <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Combo 1</h5>
-            <p class="card-text">$9000</p>
-            <p class="text-muted">Hamburguesa doble con queso, papas fritas y gaseosa.</p>
+            <h5 class="card-title">Combo 1</h5>
+            <p>$16000</p>
+            <p>Hamburguesa doble con queso, papas fritas y gaseosa.</p>
+            <button class="btn btn-danger agregar-btn" data-id="1" data-nombre="Combo 1" data-precio="16000">Agregar al carrito</button>
           </div>
         </div>
       </div>
-
       <!-- Combo 2 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 shadow-sm border-0">
-          <a href="orden.html">
-            <img src="../assets/img/Combo 2.jpeg" class="card-img-top" alt="Combo 2: Hamburguesa clásica con lechuga y tomate">
-          </a>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="../assets/img/Combo 2.jpeg" class="card-img-top" alt="Combo 2" />
           <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Combo 2</h5>
-            <p class="card-text">$9000</p>
-            <p class="text-muted">Hamburguesa clásica con lechuga y tomate, papas y bebida.</p>
+            <h5 class="card-title">Combo 2</h5>
+            <p>$13000</p>
+            <p>Hamburguesa clásica con lechuga y tomate, papas y bebida.</p>
+            <button class="btn btn-danger agregar-btn" data-id="2" data-nombre="Combo 2" data-precio="13000">Agregar al carrito</button>
           </div>
         </div>
       </div>
-
       <!-- Combo 3 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 shadow-sm border-0">
-          <a href="orden.html">
-            <img src="../assets/img/Combo 3.jpeg" class="card-img-top" alt="Combo 3: Hamburguesa BBQ con cebolla caramelizada">
-          </a>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="../assets/img/Combo 3.jpeg" class="card-img-top" alt="Combo 3" />
           <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Combo 3</h5>
-            <p class="card-text">$9000</p>
-            <p class="text-muted">Hamburguesa BBQ con cebolla caramelizada, papas y gaseosa.</p>
+            <h5 class="card-title">Combo 3</h5>
+            <p>$15000</p>
+            <p>Hamburguesa BBQ con cebolla caramelizada, papas y gaseosa.</p>
+            <button class="btn btn-danger agregar-btn" data-id="3" data-nombre="Combo 3" data-precio="15000">Agregar al carrito</button>
           </div>
         </div>
       </div>
-
       <!-- Combo 4 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 shadow-sm border-0">
-          <a href="orden.html">
-            <img src="../assets/img/Combo 4.jpg" class="card-img-top" alt="Combo 4: Hamburguesa veggie con papas rústicas">
-          </a>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="../assets/img/Combo 4.jpg" class="card-img-top" alt="Combo 4" />
           <div class="card-body text-center">
-            <h5 class="card-title fw-bold">Combo 4</h5>
-            <p class="card-text">$9000</p>
-            <p class="text-muted">Hamburguesa veggie con papas rústicas y bebida sin azúcar.</p>
+            <h5 class="card-title">Combo 4</h5>
+            <p>$18000</p>
+            <p>Hamburguesa veggie con papas rústicas y bebida sin azúcar.</p>
+            <button class="btn btn-danger agregar-btn" data-id="4" data-nombre="Combo 4" data-precio="18000">Agregar al carrito</button>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Offcanvas del carrito -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoCanvas">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Resumen de Pedido</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div id="resumen-pedido"></div>
+      <p class="mt-3 fw-bold" id="total">Total: $0</p>
+      <button class="btn btn-secondary me-2" data-bs-dismiss="offcanvas">Seguir comprando</button>
+      <a href="orden.html" class="btn btn-success">Terminar compra</a>
+    </div>
+  </div>
+
+    <!-- Footer -->
   <footer class="footer mt-5">
     <div class="container d-flex justify-content-between flex-wrap">
+      <div class="footer-item"><p><strong>Hamburguesas Crazy</strong></p></div>
       <div class="footer-item">
-        <p><strong>Hamburguesas Crazy</strong></p>
-      </div>
-      <div class="footer-item">
-        <a href="../index.html">Home</a> | 
-        <a href="menu.html">Menú</a> | 
-        <a href="restaurantes.html">Restaurantes</a> | 
+        <a href="../index.html">Home</a> |
+        <a href="menu.html">Menú</a> |
+        <a href="restaurantes.html">Restaurantes</a> |
         <a href="nosotros.html">Nosotros</a>
       </div>
-      <div class="footer-item">
-        <p><strong>Contacto</strong><br>8989898989<br>mail@gmail.com</p>
-      </div>
+      <div class="footer-item"><p><strong>Contacto</strong><br>8989898989<br>mail@gmail.com</p></div>
       <div class="footer-item redes">
         <p><strong>Redes Sociales</strong></p>
-        <div class="social-icons">
-          <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png" alt="Ícono de Instagram en color negro" width="20"></a>
-          <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="Ícono de Facebook en color azul" width="20"></a>
-          <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/youtube.png" alt="Ícono de YouTube en rojo con símbolo de reproducción" width="20"></a>
-          <a href="https://www.linkedin.com/" target="_blank"><img src="../assets/img/linkedin.png" alt="Ícono de LinkedIn en azul profesional" width="20"></a>
-        </div>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png" width="20" /></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" width="20" /></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/youtube.png" width="20" /></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="../assets/img/linkedin.png" width="20" /></a>
       </div>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS del carrito -->
+  <script src="../js/main.js"></script>
 </body>
 </html>

@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Orden | Hamburguesas Crazy</title>
-
-   <!-- SEO -->
-  <meta name="description" content="Conocé la historia, filosofía y valores de Hamburguesas Crazy. Desde 2019, creando burgers con pasión y estilo callejero.">
-  <meta name="keywords" content="nosotros, historia hamburguesas, filosofía Crazy, hamburguesas artesanales, comida urbana">
-  <meta name="author" content="Braian Ramírez">
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Animate.css -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-  <!-- Estilos personalizados -->
-  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../assets/img/favicon.png" type="image/png" />
 </head>
-<link rel="icon" href="../assets/img/favicon.png" type="image/png">
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg custom-navbar">
-    <div class="container">
-      <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
-        <img src="../assets/img/images.png" alt="Logo circular de Hamburguesas Crazy con fondo rojo">
-        <span class="ms-2">Hamburguesas Crazy</span>
-      </a>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+      <img src="../assets/img/images.png" alt="Logo circular de Hamburguesas Crazy con fondo rojo">
+      <span class="ms-2">Hamburguesas Crazy</span>
+    </a>
 
-      <!-- Menú principal visible en escritorio -->
-      <div class="d-none d-lg-flex align-items-center ms-auto">
-        <ul class="navbar-nav text-center">
-          <li class="nav-item"><a class="nav-link fw-bold text-white" href="../index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-white" href="menu.html">Menú</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-white" href="restaurantes.html">Restaurantes</a></li>
-          <li class="nav-item"><a class="nav-link fw-bold text-white" href="nosotros.html">Nosotros</a></li>
-        </ul>
-      </div>
-
-      <!-- Ícono de cuenta -->
-      <div class="d-flex align-items-center ms-3">
-        <a href="#">
-          <img src="../assets/img/account.jpg" alt="Ícono de cuenta de usuario en formato circular" class="account-icon">
-        </a>
-      </div>
-
-      <!-- Botón hamburguesa -->
-      <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-        ☰
-      </button>
+    <!-- Menú principal visible en escritorio -->
+    <div class="d-none d-lg-flex align-items-center ms-auto">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="../index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="menu.html">Menú</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="restaurantes.html">Restaurantes</a></li>
+        <li class="nav-item"><a class="nav-link fw-bold text-white" href="nosotros.html">Nosotros</a></li>
+      </ul>
     </div>
-  </nav>
 
-  <!-- Offcanvas lateral -->
+    <!-- Ícono de cuenta -->
+    <div class="d-flex align-items-center ms-3">
+      <a href="#">
+        <img src="../assets/img/account.jpg" alt="Ícono de cuenta de usuario en formato circular" class="account-icon">
+      </a>
+    </div>
+
+    <!-- Ícono de carrito con contador -->
+    <div class="d-flex align-items-center ms-3">
+      <a class="nav-link position-relative" data-bs-toggle="offcanvas" data-bs-target="#carritoCanvas">
+        <img src="../assets/img/cart.png" alt="Carrito" width="30">
+        <span id="contador-carrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+      </a>
+    </div>
+
+    <!-- Botón hamburguesa visible en todas las resoluciones -->
+    <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+      ☰
+    </button>
+  </div>
+</nav>
+
+ <!-- Offcanvas lateral -->
   <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
     <div class="offcanvas-header">
       <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menú</h5>
@@ -70,60 +67,108 @@
     </div>
   </div>
 
+
   <!-- Main -->
-  <main class="orden-main">
-    <div class="productos">
-      <img src="../assets/img/Combo 1.jpg" alt="Imagen del Combo 1: hamburguesa, gaseosa y papas fritas">
-    </div>
+  <main class="container my-5">
+    <h2 class="text-center mb-4">Confirmar Orden</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <h4>Productos seleccionados</h4>
+        <ul id="lista-productos" class="list-group mb-3"></ul>
+        <p class="fw-bold" id="total">Total: $0</p>
+      </div>
 
-    <div class="resumen">
-      <h2>Resumen de Pedido</h2>
-      <label><input type="checkbox" checked> Hamburguesa</label>
-      <label><input type="checkbox" checked> Gaseosa</label>
-      <label><input type="checkbox" checked> Papas Fritas</label>
-
-      <label class="mt-3">
-        ¿Envío a domicilio?
-        <input type="checkbox" id="envio">
-      </label>
-
-      <input type="text" placeholder="Dirección de entrega">
-
-      <div class="total">Total: $00</div>
+      <div class="col-md-6">
+        <h4>Opciones de entrega</h4>
+        <div class="form-check mb-2">
+          <input class="form-check-input" type="checkbox" id="envioCheckbox" />
+          <label class="form-check-label" for="envioCheckbox">¿Envío a domicilio? (+10%)</label>
+        </div>
+        <div id="direccionContainer" style="display: none;">
+          <input type="text" class="form-control mb-3" id="direccionInput" placeholder="Dirección de entrega" />
+        </div>
+        <button class="btn btn-success" onclick="confirmarOrden()">Confirmar orden</button>
+        <a href="menu.html" class="btn btn-secondary ms-2">Seguir comprando</a>
+      </div>
     </div>
   </main>
 
-<div class="botones">
-  <a href="menu.html">Seguir comprando</a>
-  <a href="../pages/confirmacion.html">Terminar compra</a>
+  <!-- Modal Bootstrap -->
+  <div class="modal fade" id="modalConfirmacion" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">¡Orden finalizada!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          Gracias por tu compra. Tu pedido está en camino 🚀
+        </div>
+        <div class="modal-footer">
+          <a href="../index.html" class="btn btn-primary">Volver al inicio</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: carrito vacío -->
+<div class="modal fade" id="modalCarritoVacio" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-warning">
+        <h5 class="modal-title">Carrito vacío</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        No podés confirmar una orden vacía. Agregá al menos un producto.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Offcanvas del carrito -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="carritoCanvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Resumen de Pedido</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div id="resumen-pedido"></div>
+    <p class="mt-3 fw-bold" id="total">Total: $0</p>
+    <button class="btn btn-secondary me-2" data-bs-dismiss="offcanvas">Seguir comprando</button>
+    <a href="orden.html" class="btn btn-success">Terminar compra</a>
+  </div>
 </div>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer mt-5">
     <div class="container d-flex justify-content-between flex-wrap">
-      <div class="footer-item">
-        <p><strong>Hamburguesas Crazy</strong></p>
-      </div>
+      <div class="footer-item"><p><strong>Hamburguesas Crazy</strong></p></div>
       <div class="footer-item">
         <a href="../index.html">Home</a> |
         <a href="menu.html">Menú</a> |
         <a href="restaurantes.html">Restaurantes</a> |
         <a href="nosotros.html">Nosotros</a>
       </div>
-      <div class="footer-item">
-        <p><strong>Contacto</strong><br>8989898989<br>mail@gmail.com</p>
-      </div>
+      <div class="footer-item"><p><strong>Contacto</strong><br>8989898989<br>mail@gmail.com</p></div>
       <div class="footer-item redes">
         <p><strong>Redes Sociales</strong></p>
-        <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png" alt="Ícono de Instagram en color negro" width="20"></a>
-        <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" alt="Ícono de Facebook en color azul" width="20"></a>
-        <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/youtube.png" alt="Ícono de YouTube en rojo con símbolo de reproducción" width="20"></a>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="../assets/img/linkedin.png" alt="Ícono de LinkedIn en azul profesional" width="20"></a>
+        <a href="https://www.instagram.com/" target="_blank"><img src="../assets/img/instagram.png" width="20" /></a>
+        <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/facebook.png" width="20" /></a>
+        <a href="https://www.youtube.com/" target="_blank"><img src="../assets/img/youtube.png" width="20" /></a>
+        <a href="https://www.linkedin.com/" target="_blank"><img src="../assets/img/linkedin.png" width="20" /></a>
       </div>
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+   <!-- JS de Orden -->
+ <script src="../js/main.js"></script>
+
 </body>
 </html>
