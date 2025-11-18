@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "nombre": "Combo Tranqui",
+    "descripcion": "Hamburguesa, papas fritas, y botella de gaseosa de cola.",
+    "precio": 16000,
+    "imagen": "assets/img/Combo 1.jpg",
+    "categoria": "combo"
+  },
+  {
+    "id": 2,
+    "nombre": "Combo Bajon",
+    "descripcion": "Hamburguesa doble con lechuga,tomate, cheddar, cebolla, papas fritas, y lata de gaseosa de cola.",
+    "precio": 13000,
+    "imagen": "assets/img/Combo 2.jpeg",
+    "categoria": "combo"
+  },
+  {
+    "id": 3,
+    "nombre": "Combo Brothers",
+    "descripcion": "Dos hamburguesas doble, papas fritas, aros de cebolla/nuggets de pollo, y recipiente de salsa.",
+    "precio": 15000,
+    "imagen": "assets/img/Combo 3.jpeg",
+    "categoria": "combo"   
+  },
+  {
+    "id": 4,
+    "nombre": "Combo Chill",
+    "descripcion": "Hamburguesa, papas fritas, y bebida oscura en vaso.",
+    "precio": 18000,
+    "imagen": "assets/img/Combo 4.jpg",
+    "categoria": "combo"
+  },  
+  {
+    "id": 5,
+    "nombre": "Hamburguesa de pollo",
+    "descripcion": "Una hamburguesa individual con pan de sésamo, lechuga y medallón de pollo empanizado.",
+    "precio": 17000,
+    "imagen": "assets/img/Combo 5.jpg",
+    "categoria": "hamburguesa" 
+  },
+  {
+    "id": 6,
+    "nombre": "Nugget",
+    "descripcion": "Una porción de nuggets de pollo.",
+    "precio": 14000,
+    "imagen": "assets/img/Combo 6.jpg",
+    "categoria": "papas"
+  },
+  {
+    "id": 7,
+    "nombre": "Bandeja de papas fritas con cheddar",
+    "descripcion": "Un plato grande con papas fritas bañadas en cheddar.",
+    "precio": 16500,
+    "imagen": "assets/img/Combo 8.jpg",
+    "categoria": "papas"
+  },
+  {
+    "id": 8,
+    "nombre": "Coca Cola 1.5L",
+    "descripcion": "Bebida gaseosa de cola en botella  de 1.5 litros.",
+    "precio": 4000,
+    "imagen": "assets/img/cocacola-chica.webp",
+    "categoria": "bebida"
+  },
+  {
+    "id": 9,
+    "nombre": "Agua Mineral 500ml",
+    "descripcion": "Botella de agua mineral..",
+    "precio": 4000,
+    "imagen": "assets/img/aguamineral.jpg",
+    "categoria": "bebida"
+  },
+  {
+    "id": 10,
+    "nombre": "Seven up 1.5L",
+    "descripcion": "Bebida gaseosa de lima en botella  de 1.5 litros.",
+    "precio": 4000,
+    "imagen": "assets/img/sevenup-chica.jpg",
+    "categoria": "bebida"
+  },
+  {
+    "id": 11,
+    "nombre": "Hamburguesa doble",
+    "descripcion": "Hamburguesa doble con lechuga y queso.",
+    "precio": 7000,
+    "imagen": "assets/img/hamburguesa1.png",
+    "categoria": "hamburguesa"
+  },
+  {
+    "id": 12,
+    "nombre": "Hamburguesa Especial",
+    "descripcion": "Hamburguesa simple con lechuga,cebolla caramelizada, tomate y queso.",
+    "precio": 5000,
+    "imagen": "assets/img/hamburguesa2.png",
+    "categoria": "hamburguesa"
+  },
+  {
+    "id": 13,
+    "nombre": "Hamburguesa doble con Cheddar",
+    "descripcion": "Hamburguesa doble con triple cheddar.",
+    "precio": 4000,
+    "imagen": "assets/img/hamburguesa3.webp",
+    "categoria": "hamburguesa"
+  },
+  {
+    "id": 14,
+    "nombre": "Hamburguesa Simple",
+    "descripcion": "Hamburguesa simple con salsa especial.",
+    "precio": 5000,
+    "imagen": "assets/img/hamburguesa4.png",
+    "categoria": "hamburguesa"
+  }
+]

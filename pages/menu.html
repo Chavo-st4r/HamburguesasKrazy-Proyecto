@@ -36,12 +36,6 @@
       </ul>
     </div>
 
-    <!-- Ícono de cuenta -->
-    <div class="d-flex align-items-center ms-3">
-      <a href="#">
-        <img src="../assets/img/account.jpg" alt="Ícono de cuenta de usuario en formato circular" class="account-icon">
-      </a>
-    </div>
 
     <!-- Ícono de carrito con contador -->
     <div class="d-flex align-items-center ms-3">
@@ -74,75 +68,38 @@
     </div>
   </div>
 
+  <div class="text-center mb-4">
+  <button class="btn btn-outline-dark m-1 filtro-btn" data-categoria="todos">Todos</button>
+  <button class="btn btn-outline-dark m-1 filtro-btn" data-categoria="hamburguesa">Hamburguesas</button>
+  <button class="btn btn-outline-dark m-1 filtro-btn" data-categoria="papas">Papas Fritas</button>
+  <button class="btn btn-outline-dark m-1 filtro-btn" data-categoria="bebida">Bebidas</button>
+  <button class="btn btn-outline-dark m-1 filtro-btn" data-categoria="combo">Combos</button>
+</div>
+
 
   <!-- Sección de combos -->
-  <section class="container my-5">
-    <h2 class="text-center mb-4">Nuestros Combos</h2>
-    <div class="row g-4 justify-content-center">
-      <!-- Combo 1 -->
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="../assets/img/Combo 1.jpg" class="card-img-top" alt="Combo 1" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Combo 1</h5>
-            <p>$16000</p>
-            <p>Hamburguesa doble con queso, papas fritas y gaseosa.</p>
-            <button class="btn btn-danger agregar-btn" data-id="1" data-nombre="Combo 1" data-precio="16000">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-      <!-- Combo 2 -->
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="../assets/img/Combo 2.jpeg" class="card-img-top" alt="Combo 2" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Combo 2</h5>
-            <p>$13000</p>
-            <p>Hamburguesa clásica con lechuga y tomate, papas y bebida.</p>
-            <button class="btn btn-danger agregar-btn" data-id="2" data-nombre="Combo 2" data-precio="13000">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-      <!-- Combo 3 -->
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="../assets/img/Combo 3.jpeg" class="card-img-top" alt="Combo 3" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Combo 3</h5>
-            <p>$15000</p>
-            <p>Hamburguesa BBQ con cebolla caramelizada, papas y gaseosa.</p>
-            <button class="btn btn-danger agregar-btn" data-id="3" data-nombre="Combo 3" data-precio="15000">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-      <!-- Combo 4 -->
-      <div class="col-md-3">
-        <div class="card h-100">
-          <img src="../assets/img/Combo 4.jpg" class="card-img-top" alt="Combo 4" />
-          <div class="card-body text-center">
-            <h5 class="card-title">Combo 4</h5>
-            <p>$18000</p>
-            <p>Hamburguesa veggie con papas rústicas y bebida sin azúcar.</p>
-            <button class="btn btn-danger agregar-btn" data-id="4" data-nombre="Combo 4" data-precio="18000">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+ <section class="container my-5">
+  <h2 class="text-center mb-4">Nuestros Combos</h2>
+  <div id="menu" class="row g-4 justify-content-center">
+    
+    <!-- Aquí se insertan los combos desde JS -->
+  </div>
+</section>
+
 
   <!-- Offcanvas del carrito -->
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoCanvas">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title">Resumen de Pedido</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div id="resumen-pedido"></div>
-      <p class="mt-3 fw-bold" id="total">Total: $0</p>
-      <button class="btn btn-secondary me-2" data-bs-dismiss="offcanvas">Seguir comprando</button>
-      <a href="orden.html" class="btn btn-success">Terminar compra</a>
-    </div>
+<div class="offcanvas offcanvas-end" tabindex="-1" id="carritoCanvas">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Resumen de Pedido</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
   </div>
+  <div class="offcanvas-body">
+    <div id="resumen-pedido"></div>
+    <p class="mt-3 fw-bold" id="total">Total: $0</p>
+    <button class="btn btn-secondary me-2" data-bs-dismiss="offcanvas">Seguir comprando</button>
+<button class="btn btn-success" onclick="verificarCarritoAntesDeComprar()">Terminar compra</button>
+  </div>
+</div>
 
     <!-- Footer -->
   <footer class="footer mt-5">
@@ -168,6 +125,7 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- JS del carrito -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="../js/main.js"></script>
 </body>
 </html>

@@ -29,20 +29,7 @@
       </ul>
     </div>
 
-    <!-- Ícono de cuenta -->
-    <div class="d-flex align-items-center ms-3">
-      <a href="#">
-        <img src="../assets/img/account.jpg" alt="Ícono de cuenta de usuario en formato circular" class="account-icon">
-      </a>
-    </div>
 
-    <!-- Ícono de carrito con contador -->
-    <div class="d-flex align-items-center ms-3">
-      <a class="nav-link position-relative" data-bs-toggle="offcanvas" data-bs-target="#carritoCanvas">
-        <img src="../assets/img/cart.png" alt="Carrito" width="30">
-        <span id="contador-carrito" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-      </a>
-    </div>
 
     <!-- Botón hamburguesa visible en todas las resoluciones -->
     <button class="btn btn-outline-light ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
@@ -93,41 +80,7 @@
     </div>
   </main>
 
-  <!-- Modal Bootstrap -->
-  <div class="modal fade" id="modalConfirmacion" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">¡Orden finalizada!</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-        </div>
-        <div class="modal-body">
-          Gracias por tu compra. Tu pedido está en camino 🚀
-        </div>
-        <div class="modal-footer">
-          <a href="../index.html" class="btn btn-primary">Volver al inicio</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Modal: carrito vacío -->
-<div class="modal fade" id="modalCarritoVacio" tabindex="-1">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header bg-warning">
-        <h5 class="modal-title">Carrito vacío</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body">
-        No podés confirmar una orden vacía. Agregá al menos un producto.
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <!-- Offcanvas del carrito -->
 <div class="offcanvas offcanvas-end" tabindex="-1" id="carritoCanvas">
@@ -168,6 +121,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
    <!-- JS de Orden -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
  <script src="../js/main.js"></script>
 
 </body>
