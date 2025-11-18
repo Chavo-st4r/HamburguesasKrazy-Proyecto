@@ -1,37 +1,54 @@
-#  Hamburguesas Crazy
+ .Hamburguesas Crazy
+Sitio web responsive para una cadena de hamburgueserías ficticia. Incluye navegación, menú dinámico, carrito de compras interactivo, sucursales con mapa y un flujo completo de compra con confirmación.
 
-Sitio web responsive para una cadena de hamburgueserías ficticia. Incluye navegación, menú, sucursales con mapa interactivo y footer con redes sociales.
+ .Tecnologías utilizadas
+HTML5 – estructura clara y semántica
 
----
+SCSS modular – estilos organizados y fáciles de mantener
 
-##  Tecnologías
+Bootstrap 5 – diseño adaptable y componentes modernos
 
-- HTML5
-- SCSS modular
-- Bootstrap 5
-- Animate.css
-- Google Maps Embed
-- GitHub Pages
+Animate.css – animaciones suaves en títulos y secciones
 
----
+SweetAlert2 – alertas y confirmaciones elegantes
 
-##  Funcionalidades
+Google Maps Embed – ubicación de sucursales
 
-- Diseño adaptable a todas las resoluciones
-- Mapa con ubicación de sucursales
-- Animaciones suaves en títulos y secciones
-- Navegación clara y accesible
+GitHub Pages – despliegue online del proyecto
 
----
+ .Funcionalidades principales
+Diseño adaptable a todas las resoluciones (desktop, tablet, móvil)
 
-##  Demo
+Menú dinámico cargado desde un archivo JSON simulado
 
-👉 [Ver sitio en GitHub Pages](https://chavo-st4r.github.io/HamburguesasKrazy-Proyecto/)
+Carrito de compras interactivo con:
 
----
+Agregar y eliminar productos
 
-##  Autor
+Cálculo automático del total
 
-**Braian Ramírez**  
-Frontend orientado a resultados, con foco en modularidad, accesibilidad y presentación profesional.
+Validación de carrito vacío antes de finalizar compra
+
+Flujo completo de compra:
+
+Selección de envío o retiro en local
+
+Validación de dirección en caso de envío
+
+Confirmación final con resumen del pedido
+
+Alertas personalizadas con SweetAlert2 para mejorar la experiencia del usuario
+
+Mapa interactivo con ubicación de sucursales
+
+Footer con redes sociales y datos de contacto
+
+ .Objetivo del proyecto
+Simular un Ecommerce de hamburguesas que permita recorrer todo el proceso de compra de manera intuitiva: desde la selección de productos hasta la confirmación final, con una experiencia visual clara y profesional.
+
+ .Github Pages
+👉 Ver sitio en GitHub Pages
+
+👨‍💻 Autor
+Braian Ramírez 
 
